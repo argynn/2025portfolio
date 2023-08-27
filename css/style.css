@@ -1,12 +1,30 @@
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 11px;
-    color: #0C356A;
-    /* color: 213363; */
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
 }
 
+body {
+  background-color: #edeef0;
+  color: #0C356A;
+  font-family: Verdana, sans-serif; 
+  /* font-family: Arial, Helvetica, sans-serif; */
+  font-size: 11px;
+  /* color: 213363; */
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  vertical-align: middle;
+}
+
+
+
 .container{
-    border: 1px solid rgba(131, 130, 130, 0.292);
+    /* border: 1px solid rgba(131, 130, 130, 0.292); */
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px 0px rgb(25, 25, 26);
     max-width: 960px;
     margin: 0 auto;
 }
@@ -112,10 +130,10 @@ body{
 
 
 /* --------------------------- Slideshow START ---------------------------*/
-* {box-sizing: border-box}
-body {font-family: Verdana, sans-serif; margin:0}
-.mySlides {display: none}
-img {vertical-align: middle;}
+
+.mySlides {
+  display: none
+}
 
 /* Slideshow container */
 .slideshow-container {
