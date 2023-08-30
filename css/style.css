@@ -289,6 +289,7 @@ li img:hover{
 
 
 
+/* --------------------------- Footer START ---------------------------*/
 .footer{
     margin: 50px 0 0 0;
 }
@@ -338,9 +339,34 @@ li a {
   50%  {color: rgba(23, 23, 62, 0.404);}
   100% {color: rgb(95, 75, 153);}
 }
+/* --------------------------- Footer END ---------------------------*/
 
 
+/* --------------------------- Back to Top Button START ---------------------------*/
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+}
 
+#myBtn img{
+  opacity: 1;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+#myBtn:hover {
+  opacity: .5;
+}
+/* --------------------------- Back to Top Button END ---------------------------*/
 
 
 
