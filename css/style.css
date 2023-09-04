@@ -48,10 +48,18 @@ img {
 
 .logo{
   /* border: 1px solid red; */
-  width: 20%;
+  pointer-events: auto;
+  width: 40%;
   margin: 1% auto 0;
   padding: 7px 0;
   display: block;
+  transition: transform .2s;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+  cursor: none; 
+  cursor: none;
 }
 
 .line{
@@ -277,6 +285,10 @@ li a {
   /* display: block; */
   /* padding: 8px; */
   text-align: center;
+}
+
+li img{
+  pointer-events: auto;
 }
 
 li img:hover{
