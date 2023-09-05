@@ -85,6 +85,10 @@ img {
     width: 565px;
 }
 
+.video-views{
+  border: none;
+}
+
 .video-description{
     margin: 0;
 }
