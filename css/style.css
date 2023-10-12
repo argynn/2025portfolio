@@ -59,7 +59,6 @@ img {
 
 .logo:hover {
   transform: scale(1.1);
-  cursor: none; 
   cursor: none;
 }
 
@@ -161,7 +160,9 @@ img {
 }
 
 .row {
-  margin: 10px -16px;
+  /* margin: 10px -16px; */
+  display: flex;
+  flex-wrap: wrap;
 }
 
 /* Add padding BETWEEN each column */
@@ -189,10 +190,18 @@ img {
   /* background-color: rgb(212 212 212 / 14%); */
   /* box-shadow: -1px 1px 10px 0px rgb(0 0 0 / 32%); */
   box-shadow: 0 2px 12px #edeff0;
+  /* border: 2px solid red; */
   border-radius: 4px;
   padding: 10px;
 }
 
+.content img{
+  width: 100%;
+}
+
+.video-views{
+  width: 100%;
+}
 
 
 /* The "show" class is added to the filtered elements */
@@ -213,7 +222,7 @@ img {
   background-color: #ddd;
 }
 
-.btn.active {
+.btn.active1 {
   background-color: #666;
   color: white;
 }
@@ -340,7 +349,7 @@ img {
 }
 
 ul {
-  /* border: 10 solid blue; */
+  /* border: 10px solid blue; */
   width: 50%;
   list-style-type: none;
   margin: 0 auto;
@@ -373,9 +382,79 @@ li img:hover{
   -ms-transform: rotateZ(-360deg);
   transform: rotateZ(-360deg);
   transition: 1s ease;
+  box-shadow: 2px 2px 7px #352856;
+  border-radius: 8px;
 }
 
 /* --------------------------- Socal Media END ---------------------------*/
+
+
+
+
+
+/* --------------------------- Certification START ---------------------------*/
+/* The grid: Four equal columns that floats next to each other */
+.image-column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+
+/* Style the images inside the grid */
+.image-column img {
+  opacity: 0.8; 
+  cursor: pointer;
+  pointer-events: auto;
+  transition: transform .2s;
+}
+
+.image-column img:hover {
+  opacity: 1;
+  transform: scale(1.05);
+  box-shadow: 0px 0px 9px 0px rgba(31, 29, 75, 0.75);
+}
+
+/* Clear floats after the columns */
+.image-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The expanding image container */
+.image-container {
+  position: relative;
+  display: none;
+}
+
+#expandedImg{
+  /* border: 1px solid red; */
+  display: block;
+  margin: 10px auto;
+}
+
+/* Expanding image text */
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+/* Closable button inside the expanded image */
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+/* --------------------------- Certification END ---------------------------*/
+
+
+
 
 
 

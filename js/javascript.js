@@ -37,9 +37,9 @@ var btnContainer = document.getElementById("myBtnContainer");
 var btns = btnContainer.getElementsByClassName("btn");
 for (var i = 0; i < btns.length; i++) {
   btns[i].addEventListener("click", function(){
-    var current = document.getElementsByClassName("active");
-    current[0].className = current[0].className.replace(" active", "");
-    this.className += " active";
+    var current = document.getElementsByClassName("active1");
+    current[0].className = current[0].className.replace(" active1", "");
+    this.className += " active1";
   });
 }
 /* --------------------------- Portfolio VIDEO Gallery END ---------------------------*/
@@ -76,6 +76,17 @@ function showSlides(n) {
 }
 /* --------------------------- Slideshow END ---------------------------*/
 
+
+
+/* --------------------------- Certification START ---------------------------*/
+function myFunction(imgs) {
+  var expandImg = document.getElementById("expandedImg");
+  var imgText = document.getElementById("imgtext");
+  expandImg.src = imgs.src;
+  imgText.innerHTML = imgs.alt;
+  expandImg.parentElement.style.display = "block";
+}
+/* --------------------------- Certification END ---------------------------*/
 
 
 

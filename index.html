@@ -50,7 +50,7 @@
 
 <!------------------------ SlideShow START ------------------------>
 
-        <h3 class = "section-header-description">Отчеты 2020-2023</h3>
+        <h3 class = "section-header-description">Отчеты 2020-2023 <i style = "color: rgba(88, 88, 88, 0.821);">(Скриншоты)</i></h3>
 
         <!-- <p class = "report-description">Power Bi Reports below are created for demonstration purposes only. Source files were downloaded from the Internet and do not contain any valuable information whatsoever. These reports were created between 2020 and 2022. Some of them are simple, some are between intermediate to advanced. In my opinion, the most important is to show all the key factors rather than focusing on the design. However, design also plays an important role. Некоторые из них простые, некоторые — от среднего до продвинутого. На мой взгляд, самое главное — показать все ключевые факторы, а не зацикливаться на дизайне. Однако дизайн также играет важную роль.
         </p> -->
@@ -237,10 +237,10 @@
         <br>
 
         <div id="myBtnContainer">
-            <button class="btn active" onclick="filterSelection('all')"> Все</button>
+            <button class="btn active1" onclick="filterSelection('all')"> Все</button>
             <button class="btn" onclick="filterSelection('nature')"> Power BI</button>
             <button class="btn" onclick="filterSelection('cars')"> Excel</button>
-            <button class="btn" onclick="filterSelection('people')"> Others</button>
+            <button class="btn" onclick="filterSelection('people')"> Остальные...</button>
         </div>
 
         <!-- Portfolio Gallery Grid -->
@@ -301,6 +301,24 @@
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta alias eaque, sunt ea reiciendis nobis suscipit aspernatur? Deserunt ratione modi exercitationem dolores dolor neque ad unde! Molestiae illo magnam totam?</p>
                 </div>
             </div>
+
+            <div class="column people">
+                <div class="content loading">
+                    <img src="img/icons/loading3.gif" alt="Car" style="width:100%">
+                    <h4>MS SQL</h4>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta alias eaque, sunt ea reiciendis nobis suscipit aspernatur? Deserunt ratione modi exercitationem dolores dolor neque ad unde! Molestiae illo magnam totam?</p>
+                </div>
+            </div>
+
+            <div class="column people">
+                <div class="content loading">
+                    <img src="img/icons/loading3.gif" alt="Car" style="width:100%">
+                    <h4>MySQL</h4>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta alias eaque, sunt ea reiciendis nobis suscipit aspernatur? Deserunt ratione modi exercitationem dolores dolor neque ad unde! Molestiae illo magnam totam?</p>
+                </div>
+            </div>
+
+
 
         <!-- END GRID -->
         </div>
@@ -376,6 +394,39 @@
 <!------------------------ VIDEO END ------------------------>
 
 
+
+
+<!------------------------ Certification START ------------------------>
+        <h3 class = "section-header-description">Сертификаты</h3>
+        
+        <div class="image-container">
+            <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+            <img id="expandedImg" style="width:70%;">
+            <div id="imgtext"></div>
+        </div>
+
+        <!-- The four columns -->
+        <div class="image-row">
+            <div class="image-column">
+            <img src="img/Certificate 1.png" style="width:100%" onclick="myFunction(this);">
+            </div>
+            <div class="image-column">
+            <img src="img/Certificate 2.png" style="width:100%" onclick="myFunction(this);">
+            </div>
+            <div class="image-column">
+            <img src="img/Certificate 1.png" style="width:100%" onclick="myFunction(this);">
+            </div>
+            <div class="image-column">
+            <img src="img/Certificate 2.png" style="width:100%" onclick="myFunction(this);">
+            </div>
+        </div>
+<!------------------------ Certification END ------------------------>
+
+
+
+
+
+<!------------------------ FOOTER START ------------------------>
         <div class = "footer">
             <!-- old code -->
             <!-- <h5>Я в соц.сетях :)</h5>
@@ -390,11 +441,18 @@
                 <a href="https://hh.kz/resume/55acd8f3ff08923f270039ed1f4d7a4d654753" target=”_blank”>Mr.Nariman</a> © 2023
             </p>
         </div>
+<!------------------------ FOOTER END ------------------------>
+
 
     </div>
     <!-- Container END -->
 
+
+    <!-------------- Scroll to Top Btn START -------------->
     <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="img/icons/arrow-up.png" alt=""></button>
+    <!-------------- Scroll to Top Btn END -------------->
+
+
 
 <script src="js/javascript.js"></script>
 <!--           __
