@@ -394,10 +394,19 @@ li img:hover{
 
 /* --------------------------- Certification START ---------------------------*/
 /* The grid: Four equal columns that floats next to each other */
+.image-row{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+
 .image-column {
-  float: left;
-  width: 25%;
-  padding: 10px;
+  /* float: left; */
+  width: 17%;
+  padding: 7px;
+  /* border: 3px solid red; */
 }
 
 /* Style the images inside the grid */
